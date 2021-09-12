@@ -1,8 +1,12 @@
 class MeasuresController < ApplicationController
     include CurrentUserConcern
     def index
-        @measures = logged_in_user.measures
-        render json: { status: :ok, data: @measures }
+        if check_logged_in
+            @measures = logged_in_user.measures
+            render json: { status: :ok, data: @measures }
+        else
+            render json: { message: 'Not authorized!' }
+        end
     end
 
     def create
