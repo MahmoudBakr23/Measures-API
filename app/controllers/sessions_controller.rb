@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     if @user&.authenticate(params[:password])
       session[:user_id] = @user.id
       token = encode_token({ user_id: @user.id })
-      render json: { data: @user, token: token, status: :created }
+      render json: { data: @user, token: token, status: :created, logged_in: true }
     else
       render json: { message: 'User not found! please try again', status: :unauthorized }
     end
