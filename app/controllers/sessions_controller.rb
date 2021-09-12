@@ -17,5 +17,10 @@ class SessionsController < ApplicationController
     else
       render json: { message: 'Please login first', logged_in: false }
     end
-  end 
+  end
+
+  def logout
+    reset_session
+    render json: { message: 'You logged out', logged_in: false }
+  end
 end
