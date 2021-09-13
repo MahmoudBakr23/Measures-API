@@ -2,7 +2,7 @@ class MeasuresController < ApplicationController
     include CurrentUserConcern
     def index
         if check_logged_in
-            @measures = logged_in_user.measures
+            @measures = Measure.where(user_id: logged_in_user.id)
             render json: { status: :ok, data: @measures }
         else
             render json: { message: 'Not authorized!' }
