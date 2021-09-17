@@ -23,10 +23,12 @@ class MeasuresController < ApplicationController
     end
 
     def show
-        @measure = Measure.find(
-        params[:id]
-        )
-        render json: { data: @measure }
+        if check_logged_in
+            @measure = Measure.find(params[:id])
+            render json: { data: @measure }
+        else
+            render json: { message: 'Please login first!' }
+        end
     end
 
     private
