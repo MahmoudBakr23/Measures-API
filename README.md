@@ -32,9 +32,9 @@ $ git clone https://github.com/MahmoudBakr23/Measures-API.git
 ```
 $ bundle install
 ```
+
 ```
 rails db:create
-
 ```
 
 ```
@@ -71,8 +71,8 @@ $ bundle exec rspec
 
 👤 **Mahmoud Bakr**
 
-- Github: [@rahalrazika](https://github.com/MahmoudBakr23)
-- Linkedin : [Razika Rahal](https://www.linkedin.com/in/m-bakr/)
+- Github: [Mahmoud Bakr](https://github.com/MahmoudBakr23)
+- Linkedin : [Mahmoud Bakr](https://www.linkedin.com/in/m-bakr/)
 
 ## 🤝 Contributing
 
