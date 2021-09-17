@@ -63,6 +63,7 @@ $ bundle exec rspec
 | /logged_in        | GET             | Get the current user      | 
 | /all/measures     | GET             | Get all user's measures   | 
 | /measures/:id     | GET             | Get single measure        |
+| /create/measure   | POST            | Create a new measure      |
 | /logout           | DELETE          | End current user session  |
 
 
