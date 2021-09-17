@@ -1,3 +1,4 @@
+# Current user module
 module CurrentUserConcern
   extend ActiveSupport::Concern
 
