@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#login'
   get 'logged_in', to: 'sessions#logged_in'
   delete 'logout', to: 'sessions#logout'
-  resources :measures, only: %i[show]
-  get 'all/measures', to: 'measures#index'
+  resources :trainings, only: %i[show]
+  get 'all/trainings', to: 'trainings#index'
+  post 'create/training', to: 'trainings#create'
   post 'create/measure', to: 'measures#create'
-  delete 'delete/measure', to: 'measures#destroy'
+  get 'all/measures', to: 'measures#index'
 end
