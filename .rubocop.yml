@@ -32,6 +32,8 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+Style/GuardClause:
+  Enabled: false
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
@@ -55,4 +57,6 @@ Metrics/CyclomaticComplexity:
 Metrics/PerceivedComplexity:
   Enabled: false
 Lint/ScriptPermission:
+  Enabled: false
+Layout/EndOfLine:
   Enabled: false

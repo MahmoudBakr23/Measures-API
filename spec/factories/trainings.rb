@@ -1,5 +1,6 @@
+require 'faker'
 FactoryBot.define do
   factory :training do
-    name { "MyString" }
+    name { 'MyString' }
   end
 end

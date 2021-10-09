@@ -10,5 +10,6 @@ RSpec.describe User, type: :model do
 
   describe 'associations' do
     it { should have_many(:measures) }
+    it { should have_many(:trainings) }
   end
 end

@@ -1,3 +1,4 @@
+# Trainings controller
 class TrainingsController < ApplicationController
   include CurrentUserConcern
   def index
